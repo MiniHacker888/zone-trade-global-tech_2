@@ -1,0 +1,147 @@
+
+
+/* Contenedor Principal */
+.container2 {
+    width: 85%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Títulos */
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1c1f2a;
+    text-align: center;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #6a6a6a;
+}
+
+/* Aliados - Clientes */
+.clientes-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cliente {
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cliente:hover {
+    transform: scale(1.1);
+}
+
+.cliente-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.cliente-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Aliados - Proveedores */
+.proveedores-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.proveedor {
+    text-align: center;
+    width: 22%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.proveedor:hover {
+    transform: scale(1.05);
+}
+
+.proveedor-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.proveedor-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Información Proveedores */
+.proveedores-info {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.proveedor-info {
+    width: 45%;
+}
+
+.proveedor-info-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1c1f2a;
+    margin-bottom: 10px;
+}
+
+.proveedor-info-description {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Certificaciones */
+.certificaciones-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.certificacion {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 45%;
+}
+
+.certificacion-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.certificacion-info {
+    width: 80%;
+}
+
+.certificacion-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #1c1f2a;
+    margin-bottom: 10px;
+}
+
+.certificacion-description {
+    font-size: 1rem;
+    color: #444;
+}

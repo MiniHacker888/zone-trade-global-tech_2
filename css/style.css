@@ -1,0 +1,225 @@
+/*
+/* ======================= */
+/*     HERO SECTION        */
+/* ======================= */
+.hero {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  /*font-size: 3rem;*/
+  margin-bottom: 20px;
+}
+
+.hero p {
+  /*font-size: 1.4rem;*/
+  margin-bottom: 30px;
+}
+
+.hero .btn-primary {
+  background-color: #fd1818; /* Naranja más suave para un mejor contraste */
+  color: #fff; /* Blanco para el texto */
+  padding: 12px 30px; /* Aumentamos el espacio alrededor del texto */
+  border-radius: 5px;
+  text-decoration: none;
+ /* font-weight: bold; /* Texto en negrita */
+  /*font-size: 1.2rem; /* Ajuste de tamaño para mejor legibilidad */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves para efectos hover */
+}
+
+.hero .btn-primary:hover {
+  background-color: #ac4848; /* Un tono más oscuro cuando se pasa el cursor */
+  transform: scale(1.05); /* Le da un efecto de agrandamiento al hacer hover */
+}
+
+/* ======================= */
+/*     IMAGE BANNER        */
+/* ======================= */
+.hidden {
+  display: none;
+}
+
+.image-banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.image-banner-img {
+  width: 100%;
+  height: 600px; /* Ajusta este valor a tu gusto (antes quizás era más alto) */
+  object-fit: cover; /* Esto hace que la imagen se recorte estéticamente sin deformarse */
+  display: block;
+}
+
+.image-banner-title {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.6); /*  Fondo oscuro translúcido */
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Opcional: resalta el texto */
+}
+
+
+
+/* ======================= */
+/*     ABOUT US SECTION    */
+/* ======================= */
+.section-padding {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-us-container h2 {
+  /*font-size: 2.5rem;*/
+  margin-bottom: 20px;
+}
+
+.about-us-container p,
+.about-us-container ul li {
+ /* font-size: 1.1rem;*/
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.about-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-box h2 {
+  /*font-size: 2rem;*/
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.about-box .lema {
+  /*font-style: italic;*/
+  color: #0066cc;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about-box::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #00ccff, #ffcc00, #00ccff, #ffcc00);
+  background-size: 300% 300%;
+  animation: borderMove 6s linear infinite;
+  border-radius: 22px;
+  z-index: -1;
+}
+
+@keyframes borderMove {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* ======================= */
+/*     SERVICES SECTION    */
+/* ======================= */
+.services {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.titulo-servicios {
+  background-color: #f5f5f5;
+  border: 2px solid #00ccff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 6px rgba(0, 204, 255, 0.3);
+  animation: borde-animado 4s linear infinite;
+  margin-bottom: 2rem;
+}
+
+.titulo-servicios h2 {
+ /* font-size: 2.2rem;
+  font-weight: 600;*/
+}
+
+@keyframes borde-animado {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(0, 204, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(0, 204, 255, 0.6);
+  }
+}
+
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.service-item {
+  flex-basis: 30%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+}
+
+.service-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover img {
+  transform: scale(1.1);
+}
+
+.service-item h3 {
+  /*font-size: 1.5rem;*/
+  margin: 20px 0;
+}
+
+.service-item p {
+ /* font-size: 1.1rem;*/
+  color: #2c2c2c; /* Gris carbón: un tono elegante */
+ /* font-weight: 500; /* Un poco más grueso, no llega a bold */
+  line-height: 1.6;
+}
